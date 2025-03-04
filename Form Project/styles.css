@@ -1,0 +1,75 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:cornflowerblue;
+}
+
+.bg-img {
+    background-image: url(cornflower.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card.first-column {
+    border-color: cornflowerblue !important;
+    border-right-style: none !important;
+}
+
+.second-column {
+    background-color: cornflowerblue !important;
+}
+
+@media (max-width: 576px) {
+    .card.first-column {
+        border-top: none !important;
+        border-right-style: solid !important;
+    }
+    .second-column {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+#converterTitle {
+    color: cornflowerblue;
+}
+
+#conversionInput select:hover {
+    color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+
+#conversionInput select:focus {
+    color: cornflowerblue;
+    border-color: cornflowerblue;
+    outline: none;
+}
+
+#convertButton {
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: cornflowerblue;
+    outline: solid 1.5px black;
+    border-radius: 5px;
+}
+
+#convertButton:active {
+    color: white;
+    background-color: rgb(100, 149, 237, .8);
+}
+
+#convertedDegree {
+    font-size: 50px;
+}
+
+#degree {
+    position: relative;
+    top: -4px;
+}
+
+#convertedUnit {
+    position: relative;
+    top: -11px;
+    font-size: large;
+}
