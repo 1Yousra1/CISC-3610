@@ -1,4 +1,4 @@
-document.getElementById("convertButton").addEventListener("click", function() {
+function convertTemp() {
     let degreeValue = parseFloat(document.getElementById("degreeInput").value);
     let fromUnit = document.getElementById("unitInput").value;
     let toUnit = document.querySelector("#conversionInput select").value;
@@ -14,4 +14,4 @@ document.getElementById("convertButton").addEventListener("click", function() {
 
     document.getElementById("convertedDegree").textContent = result.toFixed(1);
     document.getElementById("convertedUnit").textContent = toUnit;
-});
+};
