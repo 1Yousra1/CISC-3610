@@ -14,4 +14,10 @@ function convertTemp() {
 
     document.getElementById("convertedDegree").textContent = result.toFixed(1);
     document.getElementById("convertedUnit").textContent = toUnit;
+
+    let resultBox = document.getElementById("convertedResults");
+    resultBox.classList.remove("show");
+    void resultBox.offsetWidth; // Force reflow
+    resultBox.classList.add("show");
+
 };
