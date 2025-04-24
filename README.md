@@ -1,15 +1,13 @@
 # 🌐 CISC 3610 Projects – Yousra Elassa
 
-Welcome! This repository contains my multimedia programming projects for the CISC 3610 course at Brooklyn College.
+Multimedia projects using HTML, CSS, and JavaScript for CISC 3610 at Brooklyn College.
 
-## 🎃 Project 1: Spooky Encounter
+## 🗂️ [Portfolio Overview](https://1yousra1.github.io/CISC-3610/portfolio.html)
 
-👉 [Spooky Encounter on GitHub Pages](https://1yousra1.github.io/CISC-3610/Scene%20Project/index.html)
+### 🎃 [Spooky Encounter](https://1yousra1.github.io/CISC-3610/Scene%20Project/index.html)
+### 🌡️ [Temperature Converter](https://1yousra1.github.io/CISC-3610/Form%20Project/index.html)
+### 🚀 [Space Adventure](https://1yousra1.github.io/CISC-3610/Audio%20Project/index.html)
 
-## 🌡️ Project 2: Temperature Converter
+## 🧑‍💻 Author
 
-👉 [Temperature Converter on GitHub Pages](https://1yousra1.github.io/CISC-3610/Form%20Project/index.html)
-
-## 🚀 Project 3: Space Adventure
-
-👉 [Space Adventure on GitHub Pages](https://1yousra1.github.io/CISC-3610/Audio%20Project/index.html)
+### Yousra Elassa → 📧 [yousra.elassa40@bcmail.cuny.edu](mailto:yousra.elassa40@bcmail.cuny.edu)
