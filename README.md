@@ -2,7 +2,7 @@
 
 Multimedia projects using HTML, CSS, and JavaScript for CISC 3610 at Brooklyn College.
 
-## 🗂️ [Portfolio Overview](https://1yousra1.github.io/CISC-3610/portfolio.html)
+## 🗂️ [Portfolio Overview](https://1yousra1.github.io/CISC-3610/)
 
 ### 🎃 [Spooky Encounter](https://1yousra1.github.io/CISC-3610/Scene%20Project/index.html)
 ### 🌡️ [Temperature Converter](https://1yousra1.github.io/CISC-3610/Form%20Project/index.html)
