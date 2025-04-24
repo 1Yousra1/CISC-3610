@@ -1,0 +1,79 @@
+.bg {
+    background: linear-gradient(to bottom, #1a1a2e 0%, #16213e 30%, #0f3460 70%);
+    min-height: 100vh;
+    font-family: 'Amatic SC', cursive;
+    color: #fcebb2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: visible;
+}
+
+h1 {
+    font-size: 40px !important;
+    color: #ffe8a3 !important;
+    text-shadow: 0 0 10px rgba(255, 232, 163, 0.5) !important;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive !important; 
+    font-size: 30px !important; 
+    color: #fcebb2 !important;
+    margin-bottom: 15px !important;
+    text-shadow: 0 0 15px rgba(255, 232, 163, 0.5) !important;
+}
+
+.header {
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 2px solid #ffe8a3 !important; 
+    border-radius: 15px !important;
+    box-shadow: 0 0 15px rgba(255, 232, 163, 0.3) !important;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #ffe8a3, 0 0 20px #ffe8a3;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.bar {
+    margin-right: 10px;
+}
+
+.doughnut {
+    margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+    .doughnut {
+        margin-top: 30px;
+    }
+}
+
+/*I do not take credit for this animation*/
+.star {
+    --size: 20vmin;
+    --holes: calc(var(--size) * .495);
+    width: var(--size);
+    aspect-ratio: 1/1;
+    position: fixed;
+    background: #ffe8a3;
+    --mask: radial-gradient(var(--holes) at var(--holes) var(--holes), #0000 99%, #000) calc(var(--holes)*-1) calc(var(--holes)*-1);
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: sparkle 1.2s linear forwards;
+    z-index: 1;
+}
+@keyframes sparkle {
+    0% { transform: scale(0); opacity: 1; }
+    25% { opacity: 1; }
+    100% { transform: scale(1); opacity: 0; }
+}
