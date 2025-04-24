@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>Audio Project</title>
+    </head>
+    <body>
+        <div class="bg-img">
+            <div class="d-flex justify-content-center align-items-center vh-100">
+                <div class="container" style="max-width: 1000px;"> 
+                    <div class="row g-0">
+                        <!--First Column-->
+                        <div class="col-sm-6 order-sm-1 order-2">
+                            <div class="card h-100 rounded-0 border border-3 first-column">
+                                <div class="card-body py-4">
+                                    <form>
+                                        <h2 id="formTitle" class="mb-4" style="font-weight: bolder;">Control Board</h2>
+                                        <!--Bckg Input-->
+                                        <label class="mb-2">Background Image</label><br>
+                                        <div id="bckgControl" class="d-flex justify-content-between mx-2">
+                                            <div class="text-center">
+                                                <label class="d-block">Image 1</label>
+                                                <input id="image1" onclick="displayBckg('imgs/moon_bckg.jpg')" type="radio" name="bckgImg" class="form-check-input" value="image 1">
+                                            </div>
+                                            <div class="text-center">
+                                                <label class="d-block">Image 2</label>
+                                                <input id="image2" onclick="displayBckg('imgs/mars_bckg.jpg')" type="radio" name="bckgImg" class="form-check-input" value="image 2">
+                                            </div>
+                                            <div class="text-center">
+                                                <label class="d-block">Image 3</label>
+                                                <input id="image3" onclick="displayBckg('imgs/planet_bckg.jpg')" type="radio" name="bckgImg" class="form-check-input" value="image 3">
+                                            </div>
+                                        </div>
+                                        
+                                        <!--Item Input-->
+                                        <label class="mt-4 mb-2">Item Control</label>
+                                        <div id="itemControl" class="d-flex justify-content-between mx-3">
+                                            <div>
+                                                <label class="d-block">Item 1</label>
+                                                <div class="form-check form-switch">
+                                                    <input id="item1" onclick="displayItem('item1')" type="checkbox" role="switch" class="form-check-input">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label class="d-block">Item 2</label>
+                                                <div class="form-check form-switch">
+                                                    <input id="item2" onclick="displayItem('item2')" type="checkbox" role="switch" class="form-check-input">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label class="d-block">Item 3</label>
+                                                <div class="form-check form-switch">
+                                                    <input id="item3" onclick="displayItem('item3')" type="checkbox" role="switch" class="form-check-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!--Audio Input-->
+                                        <label class="mt-4 mb-2">Sound Effect</label><br>
+                                        <div id="soundControl" class="d-flex justify-content-between mx-2">
+                                            <div class="text-center">
+                                                <label class="d-block">Sound 1</label>
+                                                <input id="sound1" onclick="playSound('sounds/space.mp3')" type="radio" name="soundEffect" class="form-check-input" value="sound 1">
+                                            </div>
+                                            <div class="text-center">
+                                                <label class="d-block">Sound 2</label>
+                                                <input id="sound2" onclick="playSound('sounds/beaming.mp3')" type="radio" name="soundEffect" class="form-check-input" value="sound 2">
+                                            </div>
+                                            <div class="text-center">
+                                                <label class="d-block">Sound 3</label>
+                                                <input id="sound3" onclick="playSound('sounds/rumble.mp3')" type="radio" name="soundEffect" class="form-check-input" value="sound 3">
+                                            </div>
+                                        </div>
+                                        
+                                        <!--Position Input-->
+                                        <label class="mt-4 mb-2">Position Control</label>
+                                        <div id="positionControl" class="d-flex flex-row">
+                                            <div  class="d-flex flex-column me-4">
+                                                <label class="ms-3">Horizontal</label>
+                                                <input id="horizontalPosition" oninput="updateHorizontalPos('horizontalPosition')" type="range" class="form-range mx-3" min="0" max="6">
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <label class="ms-3">Vertical</label>
+                                                <input id="verticalPosition" oninput="updateVerticalPos('verticalPosition')" type="range" class="form-range mx-3" min="0" max="6">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Second Column-->
+                        <div class="col-sm-6 order-sm-2 order-1">
+                            <h3 id="sceneTitle" class="mb-4">Space Adventure</h3>
+                            <div class="card rounded-0 border border-3 second-column">
+                                <div class="card-body p-0">
+                                    <!--Scene-->
+                                    <canvas id="myScene"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
