@@ -2,8 +2,8 @@ const cacheName = 'brainy-bits-pwa-v1';
 const staticAssets = [
     'index.html',
     'styles.css', // If you had a separate CSS file
-    './assets/icon-192x192.png', // Include your icons for offline access
-    './assets/icon-512x512.png'
+    'assets/icon-192x192.png', // Include your icons for offline access
+    'assets/icon-512x512.png'
 ];
 
 self.addEventListener('install', async () => {

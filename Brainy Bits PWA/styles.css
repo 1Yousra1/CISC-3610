@@ -4,7 +4,7 @@ body {
     color: #e0e0e0 !important;
     height: 100vh !important;
     background: radial-gradient(circle at center, #020b1f 0%, #000000 100%) !important;
-    overflow: hidden !important;
+    overflow: auto !important;
     position: relative !important;
     z-index: 0 !important;
 }
