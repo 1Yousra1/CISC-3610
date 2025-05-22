@@ -1,0 +1,124 @@
+body {
+    margin: 0 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    color: #e0e0e0 !important;
+    height: 100vh !important;
+    background: radial-gradient(circle at center, #020b1f 0%, #000000 100%) !important;
+    overflow: hidden !important;
+    position: relative !important;
+    z-index: 0 !important;
+}
+
+body::before {
+    content: "" !important;
+    position: fixed !important;
+    top: -50% !important;
+    left: -50% !important;
+    width: 200% !important;
+    height: 200% !important;
+    background: repeating-radial-gradient(circle, #001427 0, #001427 2px, transparent 3px, transparent 20px) !important;
+    animation: pulse 8s linear infinite !important;
+    opacity: 1 !important;
+    z-index: -1 !important;
+}
+
+@keyframes pulse {
+    0% {
+        transform: rotate(0deg) scale(.75);
+    }
+    50% {
+        transform: rotate(180deg) scale(1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.25);
+    }
+}
+
+.container {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.header h1 {
+    font-size: 2.5rem !important;
+    color: #00ffff !important;
+    text-shadow: 0 0 12px #00ffff !important;
+    letter-spacing: 2px !important;
+    font-weight: bold !important;
+}
+
+.header, .first-column, .second-column {
+    background: rgba(10, 20, 30, 0.9) !important;
+    border-color: #00ffff !important;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+
+#quizQuestion {
+    color: #00ffff !important;
+    text-shadow: 0 0 5px #00ffff !important;
+    font-size: 1.1rem !important;
+}
+
+#brainMenu button {
+    background: transparent !important;
+    border: 2px solid #00ffff !important;
+    color: #00ffff !important;
+    padding: 10px 15px !important;
+    margin: 10px !important;
+    border-radius: 8px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.3) !important;
+}
+
+#brainMenu button:hover {
+    background: #00ffff !important;
+    color: #0a0a0a !important;
+    box-shadow: 0 0 20px #00ffff !important;
+}
+
+#brainMenu button.selected {
+    background: #00ffff !important;
+    color: #0a0a0a !important;
+    box-shadow: 0 0 20px #00ffff !important;
+}
+
+#submitButton {
+    background: linear-gradient(45deg, #00ffff, #4ecdc4) !important;
+    border: none !important;
+    color: #000 !important;
+    padding: 10px 25px !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 15px #00ffff !important;
+    transition: transform 0.2s ease !important;
+}
+
+#submitButton:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 0 30px #00ffff !important;
+}
+
+canvas#brain {
+    background-color: transparent !important;
+    border: 2px solid #00ffff !important;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.4) !important;
+    width: 350px !important;
+    height: 250px !important;
+    display: block !important;
+}
+
+#brain {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#explanationBox {
+    padding: 10px;
+    color: #00ffff;
+    text-shadow: 0 0 6px #00ffff;
+}

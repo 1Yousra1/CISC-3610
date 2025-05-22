@@ -1,0 +1,40 @@
+{
+  "brainParts": [
+    {
+      "title": "Hippocampus",
+      "question": "Which part of the brain is involved in memory formation and spatial navigation?",
+      "description": "The hippocampus plays a crucial role in memory formation, organization, and spatial navigation.",
+      "highlight": { "x": 192, "y": 148, "r": 12 }
+    },
+    {
+      "title": "Amygdala",
+      "question": "Which part of the brain processes emotions like fear and pleasure?",
+      "description": "The amygdala helps regulate emotions, especially fear, aggression, and pleasure responses.",
+      "highlight": { "x": 180, "y": 148, "r": 12 }
+    },
+    {
+      "title": "Prefrontal Cortex",
+      "question": "Which brain region is responsible for decision-making and self-control?",
+      "description": "The prefrontal cortex is involved in planning, decision-making, personality expression, and moderating social behavior.",
+      "highlight": { "x": 100, "y": 100, "r": 30 }
+    },
+    {
+      "title": "Cerebellum",
+      "question": "Which part of the brain is responsible for coordination and balance?",
+      "description": "The cerebellum controls motor movement, posture, balance, and coordination.",
+      "highlight": { "x": 215, "y": 190, "r": 30 }
+    },
+    {
+      "title": "Brainstem",
+      "question": "Which brain region controls vital life functions like breathing and heart rate?",
+      "description": "The brainstem controls essential functions such as heartbeat, breathing, and sleeping.",
+      "highlight": { "x": 182, "y": 190, "r": 15 }
+    },
+    {
+      "title": "Parietal Lobe",
+      "question": "Which part of the brain processes sensory information like touch and spatial awareness?",
+      "description": "The parietal lobe is responsible for interpreting sensory information such as touch, temperature, and pain. It also plays a role in spatial orientation and body awareness.",
+      "highlight": { "x": 215, "y": 60, "r": 25 }
+    }
+  ]
+}
