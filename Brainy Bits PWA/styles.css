@@ -86,6 +86,13 @@ body::before {
     box-shadow: 0 0 20px #00ffff !important;
 }
 
+#brainMenu button.flash-red {
+    background-color: #ff4c4c !important;
+    color: #fff !important;
+    border-color: #ff4c4c !important;
+    box-shadow: 0 0 12px #ff4c4c !important;
+}
+
 #submitButton {
     background: linear-gradient(45deg, #00ffff, #4ecdc4) !important;
     border: none !important;
