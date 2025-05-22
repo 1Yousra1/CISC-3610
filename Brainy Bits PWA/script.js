@@ -86,6 +86,7 @@ function submitAnswer() {
     } else {
         const audio = new Audio("assets/wrong.mp3");
         audio.play();
+        
         const buttons = document.querySelectorAll("#brainMenu button");
         buttons.forEach(btn => {
             if (btn.classList.contains("selected")) {
